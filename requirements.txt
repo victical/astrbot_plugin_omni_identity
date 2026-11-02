@@ -1,0 +1,2 @@
+# AstrBot Omni Identity Plugin
+# Requires standard library and AstrBot framework

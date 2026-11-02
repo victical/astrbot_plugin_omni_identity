@@ -1,0 +1,34 @@
+{
+  "code_expiry_seconds": {
+    "description": "验证码有效时长 (秒)",
+    "type": "int",
+    "default": 600,
+    "hint": "生成绑定验证码后的有效期，默认 600 秒（10 分钟）。"
+  },
+  "code_cooldown_seconds": {
+    "description": "验证码生成冷却时间 (秒)",
+    "type": "int",
+    "default": 15,
+    "hint": "同一用户重复生成验证码的防刷冷却时间，默认 15 秒。"
+  },
+  "enable_identity_prompt_injection": {
+    "description": "启用跨平台身份提示词注入",
+    "type": "bool",
+    "default": true,
+    "hint": "当用户在不同平台发言时，自动向大模型注入该用户已绑定的主账号身份与关系认知，确保语气统一。"
+  },
+  "identity_prompt_target": {
+    "description": "身份提示词注入位置",
+    "type": "string",
+    "default": "system",
+    "options": [
+      "system",
+      "user"
+    ],
+    "labels": [
+      "系统提示词 (System Prompt)",
+      "用户提示词 (User Prompt)"
+    ],
+    "hint": "system 会追加到人设 system_prompt；user 会追加到当次用户发言 prompt。"
+  }
+}
