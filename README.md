@@ -112,3 +112,11 @@ except ImportError:
 | `code_cooldown_seconds` | int | 15 | 验证码生成冷却时间（秒），防止频繁刷码 |
 | `enable_identity_prompt_injection` | bool | true | 是否向大模型动态注入跨平台身份认知提示词 |
 | `identity_prompt_target` | string | "system" | 提示词注入位置：`system`（人设系统提示词）或 `user`（当次用户发言） |
+
+---
+
+## 📄 License
+
+本项目采用 **GNU Affero General Public License v3.0 (AGPL-3.0)**，与 [AstrBot](https://github.com/AstrBotDevs/AstrBot) 主程序保持一致。
+
+Copyright (C) 2026 Victical
